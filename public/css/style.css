@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,700");
+.header-h1 {
+  cursor: default;
+}
+
+.header-h4 {
+  font-family: 'Merriweather', serif;
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.navigation-link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.about-header2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.about-paragraph {
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+
+.footer-link {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+.header-slogan {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+  color: #D98F4B;
+  position: absolute;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  border-bottom: 0.1rem solid #7D3C06;
+  -webkit-box-shadow: 1px 6px 18px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 6px 18px 0px rgba(0, 0, 0, 0.75);
+  z-index: 20;
+}
+
+.navigation-ulist {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.7rem 11rem 0.7rem 0;
+  list-style: none;
+  background-color: #222831;
+  z-index: 20;
+}
+
+.header-h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.header-h4 {
+  margin-top: 0;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #7D3C06;
+  margin-right: 5rem;
+  font-size: 1.4rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 20;
+}
+
+.navigation-link:hover {
+  color: #D98F4B;
+}
+
+.big-img {
+  grid-column: 1 / -1;
+  background-color: #222831;
+}
+
+.big-img-src {
+  width: 100%;
+}
+
+.header-text {
+  padding-left: 15rem;
+}
+
+.header-slogan {
+  margin-top: 20rem;
+}
+
+/* ABOUT */
+.section-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem 1fr 1fr 10rem 10rem;
+      grid-template-columns: 10rem 10rem 1fr 1fr 10rem 10rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(34, 32, 41, 0.6)), to(rgba(0, 0, 0, 0.8))), url("../images/galaxy.jpg") center no-repeat;
+  background: linear-gradient(to top, rgba(34, 32, 41, 0.6), rgba(0, 0, 0, 0.8)), url("../images/galaxy.jpg") center no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.about-video {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+}
+
+.about-paragraph {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/ 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 4rem 6rem 4rem 2rem;
+  color: white;
+}
+
+.youtubevid {
+  border: 0.7rem solid white;
+}
+
+.about-header2 {
+  background-color: #222831;
+  margin: 0 auto 0 auto;
+  color: white;
+  padding-bottom: 0.7rem;
+  padding-top: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: default;
+}
+
+#tekscripts-modal {
+  cursor: pointer;
+}
+
+.characters-p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem 1fr 1fr 10rem 10rem;
+      grid-template-columns: 10rem 10rem 1fr 1fr 10rem 10rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(34, 32, 41, 0.6)), to(rgba(0, 0, 0, 0.8))), url("../images/redgalaxy.jpg") center no-repeat;
+  background: linear-gradient(to top, rgba(34, 32, 41, 0.6), rgba(0, 0, 0, 0.8)), url("../images/redgalaxy.jpg") center no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.characters-p-lorem {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  text-align: center;
+}
+
+.footer-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  background-color: #222831;
+  margin: 0 auto 0 auto;
+  color: white;
+  padding-bottom: 0;
+  padding-top: 2rem;
+  cursor: default;
+}
+
+.footer-link {
+  text-decoration: none;
+  padding-bottom: 2rem;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.footer-link:hover {
+  color: #D98F4B;
+}
+
+.formbg-modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-modal {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(34, 32, 41, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../images/redgalaxy.jpg);
+  background: linear-gradient(to top, rgba(34, 32, 41, 0.7), rgba(0, 0, 0, 0.9)), url(../images/redgalaxy.jpg);
+  border: 2px solid #320700;
+  z-index: 1;
+  position: relative;
+}
+
+.get-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12rem;
+}
+
+.form-input {
+  font-size: 0.8rem;
+  font-family: 'Merriweather', serif;
+  width: 20rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border: 1px solid #EC420A;
+}
+
+.modal-close {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 25.7rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 4s .5s;
+  transition: 4s .5s;
+}
+
+.modal-close:hover {
+  -webkit-transform: rotate(-100deg);
+          transform: rotate(-100deg);
+}
+
+.form-button {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #7D3C06;
+  background-color: black;
+  border: 1px solid #EC420A;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  color: #D98F4B;
+}
+
+.tekz-label {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
